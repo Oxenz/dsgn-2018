@@ -8,8 +8,10 @@
 
 		&-caption
 			position absolute
-			top 40%
-			left 40%
+			top 13% //40
+			left 36%
+			font-size 48px
+			line-height 56px
 			color white
 
 	&__r
@@ -19,6 +21,17 @@
 
 .article
 	max-width 370px
+	overflow hidden
+
+
+
+	&__img
+		width 370px
+		height 180px
+		transition transform .225s
+
+		&:hover
+			transform scale(1.15)
 
 
 	&__caption
