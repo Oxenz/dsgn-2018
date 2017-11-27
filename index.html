@@ -6,12 +6,10 @@
 	<link rel='stylesheet' href='css/custombs4.css' />
 	<link rel='stylesheet' href='css/style.min.css' />
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700,700i" rel="stylesheet">
-
-
-
+	<script src='libs/svg4everybody.min.js'></script>
+	<script>svg4everybody();</script>
 </head>
 <body>
-
 <header class='container  header'>
 	<div class='row  no-gutters'>
 		<div class='col-8  header__l1'>
@@ -53,9 +51,10 @@
 				</div>
 			</div> <!-- end face-company -->
 
-
 			<img src='img/projects/l0.png' class='img  img--l0  position-absolute'></img>
+
 		</div> <!-- end col-LEFT -->
+
 		<div class='col-4  header__r1'>
 			<address class='address  header__address'>
 				<p class='header__address-info'>
@@ -71,12 +70,12 @@
 				</div>
 			</address>
 
-			<div class='button-wrapper  position-absolute'>
-				<button class='btn  custom-icon collapsed' type='button' data-toggle='collapse' data-target='#myul' aria-expanded='false' aria-controls='collapseTEST'>
-					<span class='my-class-icon'></span>
+			<div class='header__btn-wrapper  position-absolute'>
+				<button class='btn  header__btn-hamburger  collapsed' type='button' data-toggle='collapse' data-target='#main-menu' aria-expanded='false' aria-controls='Toggle navigation'>
+					<span class='header__btn-icon'></span>
 				</button>
 
-				<div class='collapse  bg-warning' id='myul'>
+				<div class='collapse  bg-warning' id='main-menu'>
 					<ul class='nav'>
 						<li><a class='my__link' href='#001'>home</a></li>
 						<li><a class='my__link' href='#002'>projects</a></li>
@@ -86,12 +85,6 @@
 					</ul>
 				</div>
 			</div>
-
-
-
-
-
-
 		</div> <!-- end col-RIGHT -->
 	</div> <!-- end ROW -->
 </header> <!-- end Header -->
@@ -154,9 +147,11 @@
 							</div>
 							<div class='project__like  project__like--l1  position-absolute  font-weight-light'>
 								<span class='custom333'>+333</span>
-								<svg class='sprite4  sprite4__favorite  sprite4__favorite--l1' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
-									<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
-								</svg>
+								<div class='project__svg-wr'>
+									<svg class='sprite4  sprite4__favorite  sprite4__favorite--l1' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
+										<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
+									</svg>
+								</div>
 							</div>
 							</div>
 
@@ -179,10 +174,13 @@
 									<use xlink:href=svg-sprites/sprite4.svg#arrow></use>
 								</svg>
 							</div>
-							<div class='project__like  project__like--l2  position-absolute  font-weight-light'>+200
-								<svg class='sprite4  sprite4__favorite  sprite4__favorite--l2' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
-									<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
-								</svg>
+							<div class='project__like  project__like--l2  position-absolute  font-weight-light'>
+								<span class=''>+171</span>
+								<div class='project__svg-wr'>
+									<svg class='sprite4  sprite4__favorite  sprite4__favorite--l2' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
+										<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
+									</svg>
+								</div> <!-- end WR -->
 							</div>
 						</div>
 						<img class='img  img--l2  position-absolute' src='img/projects/l2.png' />
@@ -203,10 +201,13 @@
 									<use xlink:href=svg-sprites/sprite4.svg#arrow></use>
 								</svg>
 							</div>
-							<div class='project__like  project__like--l3  position-absolute  font-weight-light'>+200
-								<svg class='sprite4  sprite4__favorite  sprite4__favorite--l3' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
-									<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
-								</svg>
+							<div class='project__like  project__like--l3  position-absolute  font-weight-light'>
+								<span class=''>+166</span>
+								<div class='project__svg-wr'>
+									<svg class='sprite4  sprite4__favorite  sprite4__favorite--l3' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
+										<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
+									</svg>
+								</div>
 							</div>
 						</div>
 						<img class='img  img--l3  position-absolute' src='img/projects/l3.png' />
@@ -227,10 +228,13 @@
 									<use xlink:href=svg-sprites/sprite4.svg#arrow></use>
 								</svg>
 							</div>
-							<div class='project__like  project__like--l4  position-absolute  font-weight-light'>+200
-								<svg class='sprite4  sprite4__favorite  sprite4__favorite--l4' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
-									<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
-								</svg>
+							<div class='project__like  project__like--l4  position-absolute  font-weight-light'>
+								<span class=''>+183</span>
+								<div class='project__svg-wr'>
+									<svg class='sprite4  sprite4__favorite  sprite4__favorite--l4' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
+										<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
+									</svg>
+								</div>
 							</div>
 						</div>
 						<img class='img  img--l4  position-absolute' src='img/projects/l4.png' />
@@ -250,10 +254,13 @@
 									<use xlink:href=svg-sprites/sprite4.svg#arrow></use>
 								</svg>
 							</div>
-							<div class='project__like  project__like--l5  position-absolute  font-weight-light'>+200
-								<svg class='sprite4  sprite4__favorite  sprite4__favorite--l5' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
-									<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
-								</svg>
+							<div class='project__like  project__like--l5  position-absolute  font-weight-light'>
+								<span class=''>+224</span>
+								<div class='project__svg-wr'>
+									<svg class='sprite4  sprite4__favorite  sprite4__favorite--l5' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
+										<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
+									</svg>
+								</div>
 							</div>
 						</div>
 						<img class='img  img--l5  position-absolute' src='img/projects/l5.png' />
@@ -276,10 +283,13 @@
 									<use xlink:href=svg-sprites/sprite4.svg#arrow></use>
 								</svg>
 							</div>
-							<div class='project__like  project__like--r1  position-absolute  font-weight-light'>+200
-								<svg class='sprite4  sprite4__favorite  sprite4__favorite--r1' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
-									<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
-								</svg>
+							<div class='project__like  project__like--r1  position-absolute  font-weight-light'>
+								<span class=''>+199</span>
+								<div class='project__svg-wr'>
+									<svg class='sprite4  sprite4__favorite  sprite4__favorite--r1' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
+										<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -302,10 +312,13 @@
 									<use xlink:href=svg-sprites/sprite4.svg#arrow></use>
 								</svg>
 							</div>
-							<div class='project__like  project__like--r2  position-absolute  font-weight-light'>+200
-								<svg class='sprite4  sprite4__favorite  sprite4__favorite--r2' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
-									<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
-								</svg>
+							<div class='project__like  project__like--r2  position-absolute  font-weight-light'>
+								<span class=''>+310</span>
+								<div class='project__svg-wr'>
+									<svg class='sprite4  sprite4__favorite  sprite4__favorite--r2' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
+										<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -327,10 +340,13 @@
 									<use xlink:href=svg-sprites/sprite4.svg#arrow></use>
 								</svg>
 							</div>
-							<div class='project__like  project__like--r3  position-absolute  font-weight-light'>+200
-								<svg class='sprite4  sprite4__favorite  sprite4__favorite--r3' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
-									<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
-								</svg>
+							<div class='project__like  project__like--r3  position-absolute  font-weight-light'>
+								<span class=''>+54</span>
+								<div class='project__svg-wr'>
+									<svg class='sprite4  sprite4__favorite  sprite4__favorite--r3' xmlns='http://www.w3.org/2000/svg' width='20' height='15'>
+										<use xlink:href=svg-sprites/sprite4.svg#favorite></use>
+									</svg>
+								</div>
 							</div>
 						</div>
 
@@ -715,8 +731,8 @@
 					<p class='project__year  m-0  p-0  text-uppercase'>Year: <span class='font-weight-light'>2017</span></p>
 				</div>
 				<div class='project__text'>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente accusantium consequatur, officia beatae, eaque porro maxime ducimus tempore accusamus quibusdam, aperiam veniam amet eius possimus ex quia! Sit hic voluptatum voluptate repellat sunt autem, aut ducimus omnis est voluptates, nulla deleniti earum dolore. Mollitia ipsa nam numquam, perspiciatis dolorem deserunt.</p>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ducimus dolores reprehenderit vel placeat praesentium quia? Odit ea autem, amet id ut corrupti officiis. Magni numquam ducimus tenetur. Laborum nisi officiis nesciunt dolorem eveniet itaque iure dicta nobis officia ad recusandae consectetur et, architecto, praesentium perferendis minus perspiciatis assumenda deserunt.</p>
+					<p>Somehow, I doubt that. You have a good heart, Dexter. Oh I beg to differ, I think we have a lot to discuss. After all, you are a client. I like seafood. He taught me a code. To survive. Pretend. You pretend the feelings are there, for the world, for the people around you. Who knows? Maybe one day they will be.</p>
+					<p>Rorschach would say you have a hard time relating to others. I'm really more an apartment person. Pretend. You pretend the feelings are there, for the world, for the people around you. Who knows? Maybe one day they will be. Makes me a … scientist. Only you could make those words cute. Cops, another community I'm not part of. Tell him time is of the essence. I've lived in darkness a long time. Over the years my eyes adjusted until the dark became my world and I could see.</p>
 				</div>
 
 				<div class='modal-social'>
@@ -799,8 +815,8 @@
 					<div class='project__year  m-0  p-0  text-uppercase'>Year: <span class='font-weight-light'>2017</span></div>
 				</div>
 				<div class='project__text'>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente accusantium consequatur, officia beatae, eaque porro maxime ducimus tempore accusamus quibusdam, aperiam veniam amet eius possimus ex quia! Sit hic voluptatum voluptate repellat sunt autem, aut ducimus omnis est voluptates, nulla deleniti earum dolore. Mollitia ipsa nam numquam, perspiciatis dolorem deserunt.</p>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ducimus dolores reprehenderit vel placeat praesentium quia? Odit ea autem, amet id ut corrupti officiis. Magni numquam ducimus tenetur. Laborum nisi officiis nesciunt dolorem eveniet itaque iure dicta nobis officia ad recusandae consectetur et, architecto, praesentium perferendis minus perspiciatis assumenda deserunt.</p>
+					<p>You look…perfect. I've lived in darkness a long time. Over the years my eyes adjusted until the dark became my world and I could see. I'm going to tell you something that I've never told anyone before. I love Halloween. The one time of year when everyone wears a mask … not just me. Tell him time is of the essence. Hello, Dexter Morgan. I love Halloween. The one time of year when everyone wears a mask … not just me</p>
+					<p>Pretend. You pretend the feelings are there, for the world, for the people around you. Who knows? Maybe one day they will be. I love Halloween. The one time of year when everyone wears a mask … not just me. You're a killer. I catch killers. Makes me a … scientist. I'm partial to air conditioning. I love Halloween. The one time of year when everyone wears a mask … not just me. I'm really more an apartment person.</p>
 				</div>
 
 				<div class='modal-social'>
@@ -883,8 +899,8 @@
 					<div class='project__year  m-0  p-0  text-uppercase'>Year: <span class='font-weight-light'>2017</span></div>
 				</div>
 				<div class='project__text'>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente accusantium consequatur, officia beatae, eaque porro maxime ducimus tempore accusamus quibusdam, aperiam veniam amet eius possimus ex quia! Sit hic voluptatum voluptate repellat sunt autem, aut ducimus omnis est voluptates, nulla deleniti earum dolore. Mollitia ipsa nam numquam, perspiciatis dolorem deserunt.</p>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ducimus dolores reprehenderit vel placeat praesentium quia? Odit ea autem, amet id ut corrupti officiis. Magni numquam ducimus tenetur. Laborum nisi officiis nesciunt dolorem eveniet itaque iure dicta nobis officia ad recusandae consectetur et, architecto, praesentium perferendis minus perspiciatis assumenda deserunt.</p>
+					<p>Only you could make those words cute. I'm generally confused most of the time. Finding a needle in a haystack isn't hard when every straw is computerized. I am not a killer. I'm really more an apartment person.</p>
+					<p>I am not a killer. I feel like a jigsaw puzzle missing a piece. And I'm not even sure what the picture should be. I'm doing mental jumping jacks. You all right, Dexter? You all right, Dexter? Somehow, I doubt that. You have a good heart, Dexter. Tell him time is of the essence. Rorschach would say you have a hard time relating to others. I'm going to tell you something that I've never told anyone before.</p>
 				</div>
 
 				<div class='modal-social'>
@@ -969,8 +985,8 @@
 					<div class='project__year  m-0  p-0  text-uppercase'>Year: <span class='font-weight-light'>2017</span></div>
 				</div>
 				<div class='project__text'>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente accusantium consequatur, officia beatae, eaque porro maxime ducimus tempore accusamus quibusdam, aperiam veniam amet eius possimus ex quia! Sit hic voluptatum voluptate repellat sunt autem, aut ducimus omnis est voluptates, nulla deleniti earum dolore. Mollitia ipsa nam numquam, perspiciatis dolorem deserunt.</p>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ducimus dolores reprehenderit vel placeat praesentium quia? Odit ea autem, amet id ut corrupti officiis. Magni numquam ducimus tenetur. Laborum nisi officiis nesciunt dolorem eveniet itaque iure dicta nobis officia ad recusandae consectetur et, architecto, praesentium perferendis minus perspiciatis assumenda deserunt.</p>
+					<p>The way I see it, every life is a pile of good things and bad things.…hey.…the good things don't always soften the bad things; but vice-versa the bad things don't necessarily spoil the good things and make them unimportant. Aw, you're all Mr. Grumpy Face today.</p>
+					<p>Saving the world with meals on wheels. You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better? Father Christmas. Santa Claus. Or as I've always known him: Jeff. Did I mention we have comfy chairs?</p>
 				</div>
 
 				<div class='modal-social'>
@@ -1053,8 +1069,8 @@
 					<div class='project__year  m-0  p-0  text-uppercase'>Year: <span class='font-weight-light'>2017</span></div>
 				</div>
 				<div class='project__text'>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente accusantium consequatur, officia beatae, eaque porro maxime ducimus tempore accusamus quibusdam, aperiam veniam amet eius possimus ex quia! Sit hic voluptatum voluptate repellat sunt autem, aut ducimus omnis est voluptates, nulla deleniti earum dolore. Mollitia ipsa nam numquam, perspiciatis dolorem deserunt.</p>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ducimus dolores reprehenderit vel placeat praesentium quia? Odit ea autem, amet id ut corrupti officiis. Magni numquam ducimus tenetur. Laborum nisi officiis nesciunt dolorem eveniet itaque iure dicta nobis officia ad recusandae consectetur et, architecto, praesentium perferendis minus perspiciatis assumenda deserunt.</p>
+					<p>I am the last of my species, and I know how that weighs on the heart so don't lie to me! Annihilate? No. No violence. I won't stand for it. Not now, not ever, do you understand me?! I'm the Doctor, the Oncoming Storm - and you basically meant beat them in a football match, didn't you?</p>
+					<p> hate yogurt. It's just stuff with bits in. Annihilate? No. No violence. I won't stand for it. Not now, not ever, do you understand me?! I'm the Doctor, the Oncoming Storm - and you basically meant beat them in a football match, didn't you?</p>
 				</div>
 
 				<div class='modal-social'>
@@ -1140,8 +1156,8 @@
 					<p class='project__year  m-0  p-0  text-uppercase'>Year: <span class='font-weight-light'>2017</span></p>
 				</div>
 				<div class='project__text'>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente accusantium consequatur, officia beatae, eaque porro maxime ducimus tempore accusamus quibusdam, aperiam veniam amet eius possimus ex quia! Sit hic voluptatum voluptate repellat sunt autem, aut ducimus omnis est voluptates, nulla deleniti earum dolore. Mollitia ipsa nam numquam, perspiciatis dolorem deserunt.</p>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ducimus dolores reprehenderit vel placeat praesentium quia? Odit ea autem, amet id ut corrupti officiis. Magni numquam ducimus tenetur. Laborum nisi officiis nesciunt dolorem eveniet itaque iure dicta nobis officia ad recusandae consectetur et, architecto, praesentium perferendis minus perspiciatis assumenda deserunt.</p>
+					<p>I was all of history's great robot actors - Acting Unit 0.8; Thespomat; David Duchovny! Actually, that's still true. Then throw her in the laundry room, which will hereafter be referred to as "the brig".</p>
+					<p>Anyone who laughs is a communist! Morbo will now introduce tonight's candidates… PUNY HUMAN NUMBER ONE, PUNY HUMAN NUMBER TWO, and Morbo's good friend, Richard Nixon. I videotape every customer that comes in here, so that I may blackmail them later.</p>
 				</div>
 
 				<div class='modal-social'>
@@ -1223,8 +1239,8 @@
 					<div class='project__sub-title  font-weight-light'>Potter focuses on the functionality and process of preparing tea. a big sieve allows the flavor of to evenly brewed.</div>
 				</div>
 				<div class='project__text'>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente accusantium consequatur, officia beatae, eaque porro maxime ducimus tempore accusamus quibusdam, aperiam veniam amet eius possimus ex quia! Sit hic voluptatum voluptate repellat sunt autem, aut ducimus omnis est voluptates, nulla deleniti earum dolore. Mollitia ipsa nam numquam, perspiciatis dolorem deserunt.</p>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ducimus dolores reprehenderit vel placeat praesentium quia? Odit ea autem, amet id ut corrupti officiis. Magni numquam ducimus tenetur. Laborum nisi officiis nesciunt dolorem eveniet itaque iure dicta nobis officia ad recusandae consectetur et, architecto, praesentium perferendis minus perspiciatis assumenda deserunt.</p>
+					<p>And why did 'I' have to take a cab? Are you crazy? I can't swallow that. It's just like the story of the grasshopper and the octopus. All year long, the grasshopper kept burying acorns for winter, while the octopus mooched off his girlfriend and watched TV. But then the winter came, and the grasshopper died, and the octopus ate all his acorns. Also he got a race car. Is any of this getting through to you?</p>
+					<p>Fatal. Kids don't turn rotten just from watching TV. Hey, tell me something. You've got all this money. How come you always dress like you're doing your laundry? And I'm his friend Jesus. What kind of a father would I be if I said no?</p>
 				</div>
 
 				<div class='modal-social'>
@@ -1305,8 +1321,8 @@
 					<div class='project__year  m-0  p-0  text-uppercase'>Year: <span class='font-weight-light'>2016</span></div>
 				</div>
 				<div class='project__text'>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente accusantium consequatur, officia beatae, eaque porro maxime ducimus tempore accusamus quibusdam, aperiam veniam amet eius possimus ex quia! Sit hic voluptatum voluptate repellat sunt autem, aut ducimus omnis est voluptates, nulla deleniti earum dolore. Mollitia ipsa nam numquam, perspiciatis dolorem deserunt.</p>
-					<p class=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, ducimus dolores reprehenderit vel placeat praesentium quia? Odit ea autem, amet id ut corrupti officiis. Magni numquam ducimus tenetur. Laborum nisi officiis nesciunt dolorem eveniet itaque iure dicta nobis officia ad recusandae consectetur et, architecto, praesentium perferendis minus perspiciatis assumenda deserunt.</p>
+					<p>The more you tighten your grip, Tarkin, the more star systems will slip through your fingers. Red Five standing by. Obi-Wan is here. The Force is with him. I can't get involved! I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I can do about it right now. It's such a long way from here.</p>
+					<p>I need your help, Luke. She needs your help. I'm getting too old for this sort of thing. Red Five standing by. Alderaan? I'm not going to Alderaan. I've got to go home. It's late, I'm in for it as it is.</p>
 				</div>
 
 				<div class='modal-social'>
@@ -1376,6 +1392,5 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src='libs/bootstrap.bundle.js'></script>
 	<script src='js/myparallax.js'></script>
-	<script src='js/mytoggler.js'></script>
 </body>
 </html>
