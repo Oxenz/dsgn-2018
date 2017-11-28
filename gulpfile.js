@@ -29,8 +29,9 @@ gulp.task('clean', function() {
 gulp.task('copy', function() {
 	return gulp.src([
 		'fonts/**',
-		'!img/{pre,pre/**}',  // порядок вкл. и искл. не важен
+		'!img/{0pre,0pre/**}',  // порядок вкл. и искл. не важен
 		'img/**',
+		'css/custombs4.css',  // bootstrap style
 		'js/**',
 		'libs/**',
 		'svg-sprites/*.svg',
@@ -55,6 +56,8 @@ gulp.task('stylus', function() {
 		.pipe(gulp.dest('../app/css'))
 		.pipe(browserSync.reload({stream: true}))
 });
+
+
 
 gulp.task('img-min', function() {
 	return gulp.src("../app/img/**/*.{png,jpg,gif}")
@@ -183,18 +186,20 @@ gulp.task('spr-svg', function() {
 // });
 
 
+// Bootstrap TASK
+
+gulp.task('bs4', function() {
+	return gulp.src('css/custombs4.css')
+		.pipe(mincss({
+			restructure: false,
+		}))
+		.pipe(rename('custombs4.min.css'))
+		.pipe(gulp.dest('../app/css'))
+});
+
+
 gulp.task('sass', function () {
 	return gulp.src('stylus/custombs4.scss')
 	.pipe(scss().on('error', scss.logError))
 	.pipe(gulp.dest('css'));
 });
-
-
-// Порядок запуска:
-// 1 Запускаем таск сборки доработаных(custom) bootstrap стилей с помощью команды 'gulp sass'
-// 2 Запускаем глобальный такс для сборки 'gulp dev'
-// Таким образом папке css появится 4 файла:
-//	a) prefix.css — не сжатые но запрефисированые стили
-//	b) style.css — обычные стили скомп. из stlye
-//	c) style.min.css — префиксированные и сжатые стили
-//	d) custombs4.css — кастомные bootstrap4-beta2 стили
