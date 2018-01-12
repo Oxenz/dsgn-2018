@@ -188,6 +188,12 @@ gulp.task('spr-svg', function() {
 
 // Bootstrap TASK
 
+gulp.task('sass', function () {
+	return gulp.src('stylus/custombs4.scss')
+	.pipe(scss().on('error', scss.logError))
+	.pipe(gulp.dest('css'));
+});
+
 gulp.task('bs4', function() {
 	return gulp.src('css/custombs4.css')
 		.pipe(mincss({
@@ -198,8 +204,4 @@ gulp.task('bs4', function() {
 });
 
 
-gulp.task('sass', function () {
-	return gulp.src('stylus/custombs4.scss')
-	.pipe(scss().on('error', scss.logError))
-	.pipe(gulp.dest('css'));
-});
+
